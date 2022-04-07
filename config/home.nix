@@ -1,8 +1,5 @@
 { config, pkgs, ... }:
 
-let
-  nvimsettings = import ./nvim/nvim.nix;
-
 in {
   programs.home-manager.enable = true;
   xdg.userDirs = {
