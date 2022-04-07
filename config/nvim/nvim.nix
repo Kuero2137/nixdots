@@ -66,7 +66,7 @@ environment.systemPackages = with pkgs; [
             let g:loaded_tutor_mode_plugin = 1
             let g:loaded_remote_plugins    = 1
 
-            lua dofile("/home/notus/.config/nixos/config/nvim/lua/settings.lua")
+            lua dofile("/home/kuero/.config/nixos/config/nvim/lua/settings.lua")
         '';
         };
     }

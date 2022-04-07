@@ -7,6 +7,11 @@
   ];
   # Install all the packages
   environment.systemPackages = with pkgs; [
-    fish
+    #cli
+    fish neovim wget
+    #gui
+    gitkraken firefox google-chrome discord
+    #dev
+    git
   ];
 }
