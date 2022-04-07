@@ -21,7 +21,7 @@ in {
         userName = "Kuero2137";
         userEmail = "kuero@protonmail.ch";
         extraConfig = {
-            init = { defaultBranch = "main"; };
+            init = { defaultBranch = "master"; };
             core = {
                 excludesfile = "$NIXOS_CONFIG_DIR/scripts/gitignore";
             };
