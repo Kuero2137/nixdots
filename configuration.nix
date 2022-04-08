@@ -32,6 +32,8 @@
 
   services.xserver.enable = true;
 
+  users.defaultUserShell = pkgs.zsh;
+
   services.xserver.displayManager.sddm.enable = true;
   services.xserver.desktopManager.plasma5.enable = true;
   
