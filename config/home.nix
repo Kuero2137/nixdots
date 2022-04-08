@@ -1,11 +1,8 @@
 { config, pkgs, ... }:
 
-let
-  nvimsettings = import ./nvim/nvim.nix;
 
 in {
   programs.home-manager.enable = true;
-  programs.neovim = nvimsettings pkgs;
 
   xdg.userDirs = {
     enable = true;

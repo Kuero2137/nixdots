@@ -15,5 +15,7 @@
     git
     #archive
     unzip unrar p7zip
+    #libs
+    libusb1
   ];
 }
