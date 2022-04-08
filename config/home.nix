@@ -7,10 +7,10 @@ in {
   programs.home-manager.enable = true;
   programs.zsh = zshsettings pkgs;
   programs.starship = {
-  enable = true;
-  settings = {
-    add_newline = false;
-    scan_timeout = 10;
+    enable = true;
+    settings = {
+      add_newline = false;
+      scan_timeout = 10;
     };
   };
 
