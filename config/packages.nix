@@ -1,3 +1,4 @@
+
 { pkgs, config, ... }:
 
 {
@@ -8,10 +9,14 @@
   # Install all the packages
   environment.systemPackages = with pkgs; [
     #cli
-    fish neovim wget
+    fish neovim wget exa thefuck
     #gui
-    gitkraken firefox google-chrome discord
+    firefox google-chrome discord kate
     #dev
-    git
+    git gitkraken go
+    #archive
+    unzip unrar p7zip
+    #libs
+    libusb1
   ];
 }
