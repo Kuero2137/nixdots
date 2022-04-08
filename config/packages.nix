@@ -13,5 +13,7 @@
     gitkraken firefox google-chrome discord
     #dev
     git
+    #archive
+    unzip unrar p7zip
   ];
 }
