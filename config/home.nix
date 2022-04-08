@@ -1,8 +1,17 @@
 { config, pkgs, ... }:
 
+let
+  zshsettings = import ./zsh/zsh.nix;
 
 in {
   programs.home-manager.enable = true;
+  programs.zsh = zshsettings pkgs;
+
+  programs.direnv = {
+    enable = true;
+    nix-direnv.enable = true;
+    enableZshIntegration = true;
+  };
 
   xdg.userDirs = {
     enable = true;
@@ -20,12 +29,16 @@ in {
         userName = "Kuero2137";
         userEmail = "kuero@protonmail.ch";
         extraConfig = {
-            init = { defaultBranch = "master"; };
+            init = { defaultBranch = "main"; };
             core = {
                 excludesfile = "$NIXOS_CONFIG_DIR/scripts/gitignore";
             };
         };
     };
+
+  programs.gpg = {
+    enable = true;
+  };
 
     home.stateVersion = "21.11";
 }

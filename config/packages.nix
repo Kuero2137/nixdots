@@ -8,14 +8,17 @@
   # Install all the packages
   environment.systemPackages = with pkgs; [
     #cli
-    fish neovim wget
+    fish neovim wget exa thefuck
+    antigen
     #gui
-    gitkraken firefox google-chrome discord
+    gitkraken firefox google-chrome discord kate
     #dev
     git
     #archive
     unzip unrar p7zip
     #libs
     libusb1
+    #languages
+    go
   ];
 }
