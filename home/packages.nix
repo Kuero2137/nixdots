@@ -9,7 +9,7 @@
   # Install all the packages
   environment.systemPackages = with pkgs; [
     #cli
-    fish neovim wget exa thefuck
+    fish neovim wget exa thefuck gnome.zenity
     #gui
     firefox google-chrome discord kate
     #dev
@@ -18,5 +18,7 @@
     unzip unrar p7zip
     #libs
     libusb1
+    #games
+    polymc lutris steam
   ];
 }
