@@ -11,13 +11,13 @@
     #cli
     fish neovim wget exa thefuck gnome.zenity
     #gui
-    firefox google-chrome discord kate
+    librewolf google-chrome discord kate
     #dev
     git gitkraken go
     #archive
     unzip unrar p7zip
     #libs
-    libusb1
+    libusb1 wine
     #games
     polymc lutris steam
   ];
