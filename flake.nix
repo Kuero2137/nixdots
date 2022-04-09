@@ -19,7 +19,7 @@
     };
   };
 
-  outputs = { nixpkgs, home-manager, nur, neovim-nightly-overlay, ...}:
+  outputs = inputs@{ nixpkgs, home-manager, nur, neovim-nightly-overlay, ...}:
     let
       system = "x86_64-linux";
     in {
@@ -35,6 +35,10 @@
           home-manager = {
             useGlobalPkgs = true;
             useUserPackages = true;
+            extraSpecialArgs = {
+              inherit inputs;
+              theme = import ./theme;
+            };
             users.kuero = import ./home;
           };
 	      nixpkgs.overlays = [
