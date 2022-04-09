@@ -3,6 +3,7 @@
 
 {
   nixpkgs.config.allowUnfree = true;
+
   nixpkgs.config.permittedInsecurePackages = [
     "electron-13.6.9"
   ];
@@ -17,8 +18,8 @@
     #archive
     unzip unrar p7zip
     #libs
-    libusb1 wine
+    libusb1 wine ffmpeg
     #games
-    polymc lutris steam
+    polymc lutris
   ];
 }

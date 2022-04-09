@@ -42,6 +42,11 @@
   sound.enable = true;
   hardware.pulseaudio.enable = true;
 
+  environment.systemPackages = [ pkgs.steam ];
+  hardware.opengl.driSupport32Bit = true;
+  hardware.opengl.extraPackages32 = with pkgs.pkgsi686Linux; [ libva vaapiIntel];
+  hardware.pulseaudio.support32Bit = true;
+
   users.users.kuero = {
     isNormalUser = true;
     initialPassword = "boni";
