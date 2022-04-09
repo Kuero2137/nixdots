@@ -1,18 +1,10 @@
-{ config, pkgs, ... }:
-
-let
-  zshsettings = import ./zsh/zsh.nix;
-
-in {
+{ inputs, config, pkgs, ... }:
+{
+  imports = [
+    ./cli/zsh
+    ./cli/git
+  ];
   programs.home-manager.enable = true;
-  programs.zsh = zshsettings pkgs;
-  programs.starship = {
-    enable = true;
-    settings = {
-      add_newline = false;
-      scan_timeout = 10;
-    };
-  };
 
   programs.direnv = {
     enable = true;
@@ -31,17 +23,6 @@ in {
     publicShare = "$HOME/stuff/other/";
     templates = "$HOME/stuff/other/";
   };
-      programs.git = {
-        enable = true;
-        userName = "Kuero2137";
-        userEmail = "kuero@protonmail.ch";
-        extraConfig = {
-            init = { defaultBranch = "main"; };
-            core = {
-                excludesfile = "$NIXOS_CONFIG_DIR/scripts/gitignore";
-            };
-        };
-    };
 
   programs.gpg = {
     enable = true;

@@ -27,12 +27,16 @@
 	JD-PC = nixpkgs.lib.nixosSystem {
 	  inherit system;
 	  modules = [
-	    ./configuration.nix ./hosts/JD-PC.nix ./config/packages.nix
+	    ./configuration.nix
+	    ./hosts/JD-PC.nix
+	    ./home/packages.nix
 	    { nix.registry.nixpkgs.flake = nixpkgs; }
 	    home-manager.nixosModules.home-manager {
-	      home-manager.useGlobalPkgs = true;
-	      home-manager.useUserPackages = true;
-	      home-manager.users.kuero = import ./config/home.nix;
+          home-manager = {
+            useGlobalPkgs = true;
+            useUserPackages = true;
+            users.kuero = import ./home;
+          };
 	      nixpkgs.overlays = [
 		nur.overlay neovim-nightly-overlay.overlay
 	      ];
