@@ -10,7 +10,8 @@
   # Install all the packages
   environment.systemPackages = with pkgs; [
     #cli
-    fish neovim wget exa thefuck gnome.zenity
+    fish neovim wget exa thefuck gnome.zenity du-dust
+    onefetch
     #gui
     librewolf google-chrome discord kate
     #dev
@@ -18,7 +19,7 @@
     #archive
     unzip unrar p7zip
     #libs
-    libusb1 wine ffmpeg
+    libusb1 wine ffmpeg openssl
     #games
     polymc lutris
   ];
