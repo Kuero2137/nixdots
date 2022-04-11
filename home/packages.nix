@@ -10,6 +10,7 @@
   # Install all the packages
   environment.systemPackages = with pkgs; [
     #cli
+<<<<<<< HEAD:home/packages.nix
     fish neovim wget exa thefuck gnome.zenity du-dust
     onefetch
     #gui
@@ -22,5 +23,19 @@
     libusb1 wine ffmpeg openssl
     #games
     polymc lutris
+=======
+    fish neovim wget exa thefuck
+    antigen
+    #gui
+    gitkraken firefox google-chrome discord kate
+    #dev
+    git
+    #archive
+    unzip unrar p7zip
+    #libs
+    libusb1
+    #languages
+    go
+>>>>>>> testing:config/packages.nix
   ];
 }

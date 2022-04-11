@@ -1,5 +1,5 @@
 {
-  description = "Kuero flake";
+  description = "NixOS config";
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
