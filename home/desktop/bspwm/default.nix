@@ -50,11 +50,6 @@
         "pavucontrol" = { state = "floating"; };
         "transmission-gtk" = { state = "floating"; };
 
-        "Firefox" = {
-          desktop = "^2";
-          follow = true;
-          state = "tiled";
-        };
         "csgo_linux64" = {
           desktop = "^4";
           follow = true;

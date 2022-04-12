@@ -1,9 +1,17 @@
 { inputs, config, pkgs, ... }:
 {
   imports = [
-    ./cli/zsh
+    ./cli/bat
+    ./cli/fzf
     ./cli/git
-    ./others
+    ./cli/gpg
+    ./cli/lf
+    ./cli/cava
+    ./cli/music
+    ./cli/nvim
+    ./cli/pass
+    ./cli/direnv
+    ./cli/zsh
 
     ./desktop/bspwm
     ./desktop/gtk
@@ -14,5 +22,10 @@
     ./desktop/eww
 
     ./programs/kitty
+    ./programs/dunst
+    ./programs/flameshot
+    ./programs/rofi
+
+    ./others
   ];
 }
