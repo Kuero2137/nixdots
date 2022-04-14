@@ -54,6 +54,16 @@
           desktop = "^4";
           follow = true;
         };
+        "lutris" = {
+          desktop = "^4";
+          follow = false;
+          state = "floating";
+        };
+        "polymc" = {
+          desktop = "^3";
+          follow = false;
+          state = "floating";
+        };
         "steam" = {
           desktop = "^4";
           follow = false;

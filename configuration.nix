@@ -61,6 +61,10 @@ in {
       lidSwitch = "lock";
     };
 
+    dbus = {
+      packages = [ pkgs.dconf ];
+    };
+
     xserver = {
       enable = true;
       layout = "pl";

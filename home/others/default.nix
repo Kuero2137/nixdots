@@ -2,6 +2,7 @@
 
 {
   programs.home-manager.enable = true;
+  dconf.enable = true;
   programs.direnv = {
     enable = true;
     nix-direnv.enable = true;

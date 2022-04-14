@@ -11,9 +11,9 @@
   environment.systemPackages = with pkgs; [
     #cli
     fish neovim wget exa thefuck gnome.zenity du-dust
-    onefetch
+    onefetch dconf htop
     #gui
-    librewolf google-chrome discord kate
+    firefox librewolf google-chrome discord kate
     #dev
     git gitkraken go
     #archive
@@ -21,6 +21,6 @@
     #libs
     libusb1 wine ffmpeg openssl
     #games
-    polymc lutris
+    polymc lutris steam
   ];
 }
