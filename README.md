@@ -1,5 +1,5 @@
 ## Info
-- [catppuccin](https://github.com/catppuccin/catppuccin) theme
+- [Catppuccin](https://github.com/catppuccin/catppuccin) theme
 - Kitty 🐱
 - bspwm 🌀
 - zsh :shell:
