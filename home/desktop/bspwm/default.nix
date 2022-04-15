@@ -22,7 +22,7 @@
       enable = true;
       startupPrograms = [
         "feh --bg-fill ~/.local/backgrounds/wallpaper.png"
-        "xrandr --output DP-0 --mode 1920x1080 --rate 150"
+        "xrandr --output DisplayPort-1 --mode 2560x1440 --rate 74.97"
         "pgrep bspswallow || bspswallow"
         "xsetroot -cursor_name left_ptr"
         "eww daemon && eww open bar"
@@ -41,7 +41,7 @@
         normal_border_color = "#${bg}";
         presel_feedback_color = "#${c6}";
       };
-      monitors = { "focused" = [ "1" "2" "3" "4" "5" ]; };
+      monitors = { "focused" = [ "1" "2" "3" "4" "5" "6" ]; };
 
       rules = {
         "Zathura" = { state = "tiled"; };
@@ -63,6 +63,7 @@
           desktop = "^3";
           follow = false;
           state = "floating";
+          center = true;
         };
         "steam" = {
           desktop = "^4";
@@ -78,6 +79,7 @@
         "Discord" = {
           desktop = "^3";
           follow = true;
+          state = "floating";
         };
         "telegram-desktop" = {
           desktop = "^3";

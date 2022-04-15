@@ -13,9 +13,10 @@
     fish neovim wget exa thefuck gnome.zenity du-dust
     onefetch dconf htop
     #gui
-    firefox librewolf google-chrome discord kate
+    librewolf chromium google-chrome discord kate
+    pavucontrol
     #dev
-    git gitkraken go
+    git gitkraken go jdk
     #archive
     unzip unrar p7zip
     #libs
