@@ -11,7 +11,7 @@
   environment.systemPackages = with pkgs; [
     #cli
     fish neovim wget exa thefuck gnome.zenity du-dust
-    onefetch dconf htop
+    onefetch dconf htop neofetch
     #gui
     librewolf chromium google-chrome discord kate
     pavucontrol
