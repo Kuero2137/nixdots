@@ -22,7 +22,7 @@
       enable = true;
       startupPrograms = [
         "feh --bg-fill ~/.local/backgrounds/wallpaper.png"
-        "xrandr --output DisplayPort-1 --mode 2560x1440 --rate 74.97"
+        "xrandr --output DisplayPort-1 --primary --mode 2560x1440 --rate 74.97 --rotate normal --output HDMI-A-0 --mode 1680x1050 --rate 60 --rotate normal --right-of DisplayPort-1"
         "pgrep bspswallow || bspswallow"
         "xsetroot -cursor_name left_ptr"
         "eww daemon && eww open bar"
@@ -59,11 +59,8 @@
           follow = false;
           state = "floating";
         };
-        "polymc" = {
-          desktop = "^3";
-          follow = false;
+        "PolyMC" = {
           state = "floating";
-          center = true;
         };
         "steam" = {
           desktop = "^4";

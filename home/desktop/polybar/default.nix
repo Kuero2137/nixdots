@@ -13,7 +13,7 @@
     '';
     config = with theme.colors; {
       "bar/top" = {
-        monitor = "\${env:MONITOR}";
+        monitor = "DisplayPort-1";
         #        width = "100%";
         width = "99.375%";
         #width = "98.75%";
@@ -30,6 +30,21 @@
         font-0 = "monospace:style=Medium:pixelsize=13;3";
         font-1 = "unifont:fontformat=truetype:size=13:antialias=false;3";
         #                font-2 = "Twitter Color Emoji:pixelsize=14;3";
+        background = "#${bg}";
+      };
+      "bar/top_external" = {
+        monitor = "HDMI-A-0";
+        width = "99.375%";
+        offset-x = "0.3125%";
+        offset-y = "0.3125%";
+        wm-restack = "bspwm";
+        height = 30;
+        radius = 0;
+        modules-left = "date";
+        modules-center = "bspwm";
+        modules-right = "mpd volume memory cpu";
+        font-0 = "monospace:style=Medium:pixelsize=13;3";
+        font-1 = "unifont:fontformat=truetype:size=13:antialias=false;3";
         background = "#${bg}";
       };
 
