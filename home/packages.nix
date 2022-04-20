@@ -14,7 +14,7 @@
     onefetch dconf htop neofetch
     #gui
     librewolf chromium google-chrome discord kate
-    pavucontrol
+    pavucontrol tdesktop
     #dev
     git gitkraken go jdk
     #archive
