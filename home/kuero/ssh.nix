@@ -1,0 +1,7 @@
+{ config, pkgs, lib, ... }:
+{
+  programs.ssh = {
+    enable = true;
+    hashKnownHosts = true;
+  };
+}
