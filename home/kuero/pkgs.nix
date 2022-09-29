@@ -6,6 +6,6 @@
     ookla-speedtest filezilla firefox neofetch
     ffmpeg gitkraken
     #gaming
-    wine-staging lutris
+    wine-staging lutris grapejuice
   ];
 }
