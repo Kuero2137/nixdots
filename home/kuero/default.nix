@@ -5,5 +5,6 @@
   imports = [
     ./pkgs.nix
     ./ssh.nix
+    ./xdg.nix
   ];
 }

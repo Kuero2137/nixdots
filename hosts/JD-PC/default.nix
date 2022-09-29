@@ -34,20 +34,7 @@
       wget
       git
       tree
-      xdg-user-dirs
     ];
-    etc = {
-      "xdg/user-dirs.defaults".text = ''
-        XDG_DESKTOP=Desk
-        XDG_DOWNLOAD=DL
-        XDG_TEMPLATES=Oth
-        XDG_PUBLICSHARE=Oth
-        XDG_DOCUMENTS=Docs
-        XDG_MUSIC=Music
-        XDG_PICTURES=Pics
-        XDG_VIDEOS=Pics
-      '';
-    };
   };
   fonts.fonts = with pkgs; [
     jetbrains-mono
