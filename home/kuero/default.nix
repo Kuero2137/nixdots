@@ -7,6 +7,5 @@
     ./ssh.nix
     ./xdg.nix
     ./vsc.nix
-    ./hyprland.nix
   ];
 }

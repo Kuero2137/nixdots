@@ -6,6 +6,8 @@ inputs.nixpkgs.lib.nixosSystem {
   inherit system;
   specialArgs = { inherit inputs self; };
   modules = [
+    inputs.hyprland.nixosModules.default
+    { programs.hyprland.enable = true; }
     "${self}/hosts/${hostname}"
     "${self}/modules"
   ] ++ inputs.nixpkgs.lib.optionals home-manager [
