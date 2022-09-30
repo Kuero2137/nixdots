@@ -6,5 +6,6 @@
     ./pkgs.nix
     ./ssh.nix
     ./xdg.nix
+    ./vsc.nix
   ];
 }
