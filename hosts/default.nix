@@ -1,4 +1,4 @@
-{ self, ... } @ inputs:
+{ self, hyprland, ... } @ inputs:
 
 {
   JD-PC = self.lib.mkSystem {
