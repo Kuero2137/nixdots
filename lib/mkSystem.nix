@@ -1,4 +1,4 @@
-{ self, hyprland, ... } @ inputs:
+{ self, ... } @ inputs:
 
 { hostname, system, home-manager ? false, extraHomeModules ? [ ] }:
 
@@ -6,7 +6,8 @@ inputs.nixpkgs.lib.nixosSystem {
   inherit system;
   specialArgs = { inherit inputs self; };
   modules = [
-    hyprland.nixosModules.default
+    inputs.hyprland.nixosModules.default
+    { programs.hyprland.enable = true; }
     "${self}/hosts/${hostname}"
     "${self}/modules"
   ] ++ inputs.nixpkgs.lib.optionals home-manager [
