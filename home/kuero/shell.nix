@@ -23,7 +23,7 @@
       rm = "rm -fr";
       c = "clear";
       fetch = "neofetch";
-      update = "nixos-rebuild switch --flake .#JD-PC";
+      rebuild = "nixos-rebuild switch --use-remote-sudo --flake .#JD-PC";
     };
   };
 }
