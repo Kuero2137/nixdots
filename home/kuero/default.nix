@@ -7,5 +7,6 @@
     ./ssh.nix
     ./xdg.nix
     ./vsc.nix
+    ./shell.nix
   ];
 }
