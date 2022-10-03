@@ -20,6 +20,11 @@ inputs.nixpkgs.lib.nixosSystem {
         extraSpecialArgs = { inherit inputs self; };
         sharedModules = extraHomeModules;
       };
+      nixpkgs.overlays = [
+        (final: prev: {
+          catppuccin-cursors =
+            prev.callPackage "${self}/overlays/catppuccin-cursors.nix" { };
+        })
     }
   ];
 }
