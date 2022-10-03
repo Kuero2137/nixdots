@@ -25,6 +25,7 @@ inputs.nixpkgs.lib.nixosSystem {
           catppuccin-cursors =
             prev.callPackage "${self}/overlays/catppuccin-cursors.nix" { };
         })
+      ];
     }
   ];
 }
