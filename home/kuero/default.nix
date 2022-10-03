@@ -8,5 +8,7 @@
     ./xdg.nix
     ./vsc.nix
     ./shell.nix
+    ./terminal.nix
+    ./desktop/hyprland
   ];
 }
