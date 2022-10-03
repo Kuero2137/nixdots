@@ -22,7 +22,7 @@
           family = "JetBrains Mono";
           style = "Bold Italic";
         };
-        size = 8;
+        size = 16;
       };
       colors = {
         primary = {
