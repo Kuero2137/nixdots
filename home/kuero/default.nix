@@ -10,5 +10,6 @@
     ./shell.nix
     ./terminal.nix
     ./desktop/hyprland
+    #./desktop/swaylock
   ];
 }
