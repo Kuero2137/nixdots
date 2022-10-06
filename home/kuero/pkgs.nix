@@ -8,5 +8,7 @@
     nicotine-plus
     #gaming
     wine-staging lutris grapejuice
+    #others
+    (callPackage ./packages/tidal-dl.nix {})
   ];
 }
