@@ -1,6 +1,7 @@
 { pkgs, config, ... }:
 
 {
+  config = {
     home.packages = with pkgs; [ swaylock-effects ];
     programs.swaylock = {
       enable = true;
@@ -65,4 +66,5 @@
         }
       ];
     };
+  };
 }
