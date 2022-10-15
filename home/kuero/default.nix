@@ -1,4 +1,4 @@
-{ inputs, ... }:
+{ pkgs, inputs, nix-doom-emacs, ... }:
 
 {
   home.stateVersion = "22.05";
@@ -10,6 +10,7 @@
     ./shell.nix
     ./terminal.nix
     ./desktop/hyprland
+    nix-doom-emacs.hmModule ./emacs
     #./desktop/swaylock
   ];
 }
