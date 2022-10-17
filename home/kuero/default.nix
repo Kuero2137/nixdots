@@ -10,6 +10,7 @@
     ./shell.nix
     ./terminal.nix
     ./desktop/hyprland
+    ./nvim
     #./desktop/swaylock
   ];
 }

@@ -5,6 +5,7 @@
     home-manager = { url = "github:nix-community/home-manager"; inputs.nixpkgs.follows = "nixpkgs"; };
     nur.url = "github:nix-community/NUR";
     hyprland = { url = "github:hyprwm/Hyprland"; inputs.nixpkgs.follows = "nixpkgs"; };
+    nvchad = { url = "github:nvchad/nvchad"; flake = false; };
   };
   outputs = { self, ... }@inputs:
     let
