@@ -16,10 +16,10 @@
     recursive = true;
   };
 
-  xdg.configFile."nvim/lua/custom" = {
-    source = ./custom;
-    recursive = true;
-  };
+#  xdg.configFile."nvim/lua/custom" = {
+#    source = ./custom;
+#    recursive = true;
+#  };
 
   programs.neovim = {
     enable = true;
