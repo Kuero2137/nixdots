@@ -6,6 +6,7 @@
     ookla-speedtest filezilla firefox neofetch
     ffmpeg gitkraken qbittorrent dwarfs fuse-overlayfs
     nicotine-plus niv slack mongodb-compass sublime4-dev
+    obsidian prismlauncher
     #gaming
     wine-staging lutris grapejuice
     #others
